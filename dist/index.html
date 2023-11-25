@@ -7,29 +7,38 @@
 </head>
 <body>
     <form action="">
-        <div id="email-section">
+        <div id="email-section" class="input-section">
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
+            <p class="validation-message" id="email-val-text"></p>
         </div>
 
-        <div id="country-section">
+        <div id="country-section" class="input-section">
             <label for="country">Country:</label>
-            <input type="text" name="country" id="country">
+            <input type="text" name="country" id="country" required>
+            <p class="validation-message" id="country-val-text"></p>
         </div>
 
-        <div id="zip-code-section">
+        <div id="zip-code-section" class="input-section">
             <label for="zip-code">Zip Code:</label>
-            <input type="text" name="zip-code" id="zip-code">
+            <input type="text" name="zip-code" id="zip-code" required>
+            <p class="validation-message" id="zip-code-val-text"></p>
         </div>
 
-        <div id="password-section">
+        <div id="password-section" class="input-section">
             <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" required>
+            <p class="validation-message" id="password-val-text"></p>
         </div>
 
-        <div id="password-confirmation-section">
-            <label for="password-c">Password Confirmation</label>
-            <input type="password" name="password-c" id="password-c">
+        <div id="password-confirmation-section" class="input-section">
+            <label for="password-c">Password Confirmation:</label>
+            <input type="password" name="password-c" id="password-c" required>
+            <p class="validation-message" id="password-c-val-text"></p>
+        </div>
+
+        <div id="submit-section">
+            <button id="submit-button">Submit</button>
         </div>
     </form>
     <script src="main.js"></script>
